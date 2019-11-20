@@ -1,4 +1,4 @@
-Ploss=100;%Watt
+Ploss=10;%Watt
 L=0.5;%length in meters
 W=0.5;%width in meters
 H=0.5;%height in meters
@@ -6,7 +6,7 @@ Tamb=298;%Ambient temp. in Kelvin
 Tin0=298;%Initial temp. inside box in Kelvin
 dwall=5;%wall thickness in cm
 Tcon=0.035;%Spesific thermal conductivity in Watts/(Kelvin*meters)  
-Cv=0.72;%Spesific constant volume heat capacity kj/(kg*K)
+Cv=720;%Spesific constant volume heat capacity j/(kg*K)
 
 time=0:0.001:1;%working time in minutes
 
