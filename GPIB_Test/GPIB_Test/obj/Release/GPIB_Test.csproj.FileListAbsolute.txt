@@ -1,0 +1,9 @@
+C:\Users\karab\Documents\Visual Studio 2017\Projects\GPIB_Test\GPIB_Test\bin\Release\GPIB_Test.exe.config
+C:\Users\karab\Documents\Visual Studio 2017\Projects\GPIB_Test\GPIB_Test\bin\Release\GPIB_Test.exe
+C:\Users\karab\Documents\Visual Studio 2017\Projects\GPIB_Test\GPIB_Test\bin\Release\GPIB_Test.pdb
+C:\Users\karab\Documents\Visual Studio 2017\Projects\GPIB_Test\GPIB_Test\obj\Release\GPIB_Test.Form1.resources
+C:\Users\karab\Documents\Visual Studio 2017\Projects\GPIB_Test\GPIB_Test\obj\Release\GPIB_Test.Properties.Resources.resources
+C:\Users\karab\Documents\Visual Studio 2017\Projects\GPIB_Test\GPIB_Test\obj\Release\GPIB_Test.csproj.GenerateResource.cache
+C:\Users\karab\Documents\Visual Studio 2017\Projects\GPIB_Test\GPIB_Test\obj\Release\GPIB_Test.csproj.CoreCompileInputs.cache
+C:\Users\karab\Documents\Visual Studio 2017\Projects\GPIB_Test\GPIB_Test\obj\Release\GPIB_Test.exe
+C:\Users\karab\Documents\Visual Studio 2017\Projects\GPIB_Test\GPIB_Test\obj\Release\GPIB_Test.pdb
