@@ -16,4 +16,3 @@ C:\Users\karab\Documents\GitHub\PowerLab-CalorimeterDesign\GPIB_Test\GPIB_Test\o
 C:\Users\karab\Documents\GitHub\PowerLab-CalorimeterDesign\GPIB_Test\GPIB_Test\obj\Debug\GPIB_Test.csproj.CoreCompileInputs.cache
 C:\Users\karab\Documents\GitHub\PowerLab-CalorimeterDesign\GPIB_Test\GPIB_Test\obj\Debug\GPIB_Test.exe
 C:\Users\karab\Documents\GitHub\PowerLab-CalorimeterDesign\GPIB_Test\GPIB_Test\obj\Debug\GPIB_Test.pdb
-C:\Users\karab\Documents\GitHub\PowerLab-CalorimeterDesign\GPIB_Test\GPIB_Test\obj\Debug\GPIB_Test.csprojAssemblyReference.cache

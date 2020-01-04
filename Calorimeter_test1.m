@@ -1,11 +1,11 @@
-Ploss=20;%Watt
+Ploss=15%Watt
 L=0.45;%length in meters
 W=0.35;%width in meters
 H=0.2;%height in meters
-Tamb=20.47+273.13;%Ambient temp. in Kelvin
-Tin0=20.47+273.13;%Initial temp. inside box in Kelvin
+Tamb=22.4+273.15;%Ambient temp. in Kelvin
+Tin0=22.4+273.15;%Initial temp. inside box in Kelvin
 dwall=7;%wall thickness in cm
-Tcon=0.075;%Spesific thermal conductivity of polystyrene in Watts/(Kelvin*meters)  
+Tcon=0.0837;%Spesific thermal conductivity of polystyrene in Watts/(Kelvin*meters)  
 %Cp=210000;%Spesific constant volume heat capacity j/(kg*K)
 Cp=1000;
 time=0:0.001:100;%working time in minutes
@@ -37,7 +37,7 @@ T1=(-B+sqrt(delta))/(2*A);
 T2=(-B-sqrt(delta))/(2*A);
 
 figure;
-plot(time,abs(T1)-273.13);
+plot(time,abs(T1)-273.15);
 %figure;
 %plot(time,abs(T2)-273.13);
 ylabel("Temp(C) in the Box");
