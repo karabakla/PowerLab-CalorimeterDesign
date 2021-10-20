@@ -1,0 +1,1150 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A1
+U 1 1 617052EC
+P 2050 2200
+F 0 "A1" H 2000 2100 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" V 2100 2000 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 2050 2200 50  0001 C CIN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 2050 2200 50  0001 C CNN
+	1    2050 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sensor_Temperature:MAX31865_Module U1
+U 1 1 6170616B
+P 4900 1650
+F 0 "U1" V 5300 800 50  0000 L CNN
+F 1 "MAX31865_Module" V 5400 800 50  0000 L CNN
+F 2 "Connector:MAX31865_Module" H 4900 1650 50  0001 C CNN
+F 3 "" H 4900 1650 50  0001 C CNN
+	1    4900 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 61723760
+P 2250 1150
+F 0 "#PWR0101" H 2250 1000 50  0001 C CNN
+F 1 "+5V" H 2265 1323 50  0000 C CNN
+F 2 "" H 2250 1150 50  0001 C CNN
+F 3 "" H 2250 1150 50  0001 C CNN
+	1    2250 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 1150 2250 1200
+$Comp
+L power:GND #PWR0102
+U 1 1 61724AEE
+P 2100 3350
+F 0 "#PWR0102" H 2100 3100 50  0001 C CNN
+F 1 "GND" H 2105 3177 50  0000 C CNN
+F 2 "" H 2100 3350 50  0001 C CNN
+F 3 "" H 2100 3350 50  0001 C CNN
+	1    2100 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 3200 2050 3200
+Wire Wire Line
+	2100 3200 2100 3350
+Wire Wire Line
+	2150 3200 2100 3200
+Connection ~ 2100 3200
+$Comp
+L power:+5V #PWR0103
+U 1 1 61726859
+P 4050 1650
+F 0 "#PWR0103" H 4050 1500 50  0001 C CNN
+F 1 "+5V" H 4065 1823 50  0000 C CNN
+F 2 "" H 4050 1650 50  0001 C CNN
+F 3 "" H 4050 1650 50  0001 C CNN
+	1    4050 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 1650 4050 1700
+$Comp
+L power:GND #PWR0104
+U 1 1 61727C8F
+P 4250 1550
+F 0 "#PWR0104" H 4250 1300 50  0001 C CNN
+F 1 "GND" H 4250 1600 50  0000 C CNN
+F 2 "" H 4250 1550 50  0001 C CNN
+F 3 "" H 4250 1550 50  0001 C CNN
+	1    4250 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 1550 4150 1550
+Wire Wire Line
+	4150 1550 4150 1700
+Text GLabel 1450 2900 0    50   Input ~ 0
+CLK
+Wire Wire Line
+	1450 2900 1550 2900
+Text GLabel 1450 2800 0    50   Input ~ 0
+SDO
+Wire Wire Line
+	1450 2700 1550 2700
+Wire Wire Line
+	1450 2800 1550 2800
+Text GLabel 1450 1800 0    50   Input ~ 0
+CS0
+Text GLabel 1450 1900 0    50   Input ~ 0
+CS1
+Text GLabel 1450 2000 0    50   Input ~ 0
+CS2
+Text GLabel 1450 2100 0    50   Input ~ 0
+CS3
+Text GLabel 1450 2200 0    50   Input ~ 0
+CS4
+Text GLabel 1450 2300 0    50   Input ~ 0
+CS5
+Text GLabel 1450 2400 0    50   Input ~ 0
+CS6
+Text GLabel 1450 2500 0    50   Input ~ 0
+CS7
+Text GLabel 1450 2600 0    50   Input ~ 0
+CS8
+Text GLabel 1450 2700 0    50   Input ~ 0
+SDI
+Text GLabel 2650 2200 2    50   Input ~ 0
+CS9
+Text GLabel 2650 2300 2    50   Input ~ 0
+CS10
+Wire Wire Line
+	1450 2600 1550 2600
+Wire Wire Line
+	1550 2500 1450 2500
+Wire Wire Line
+	1450 2400 1550 2400
+Wire Wire Line
+	1450 2300 1550 2300
+Wire Wire Line
+	1450 2200 1550 2200
+Wire Wire Line
+	1450 2100 1550 2100
+Wire Wire Line
+	1450 2000 1550 2000
+Wire Wire Line
+	1450 1900 1550 1900
+Wire Wire Line
+	1450 1800 1550 1800
+Text GLabel 2650 2400 2    50   Input ~ 0
+CS11
+Wire Wire Line
+	2550 2200 2650 2200
+Wire Wire Line
+	2550 2300 2650 2300
+Wire Wire Line
+	2550 2400 2650 2400
+Text GLabel 4650 1600 1    50   Input ~ 0
+CS0
+Wire Wire Line
+	4650 1600 4650 1700
+Text GLabel 4450 1600 1    50   Input ~ 0
+SDI
+Text GLabel 4750 1600 1    50   Input ~ 0
+SDO
+Wire Wire Line
+	4450 1600 4450 1700
+Wire Wire Line
+	4750 1600 4750 1700
+Text GLabel 4550 1600 1    50   Input ~ 0
+CLK
+Wire Wire Line
+	4550 1600 4550 1700
+$Comp
+L Device:Thermistor_PTC_3wire TH1
+U 1 1 6172F813
+P 4400 2950
+F 0 "TH1" V 4100 2950 50  0000 C CNN
+F 1 "PT100" V 4200 2950 50  0000 C CNN
+F 2 "" H 4400 3000 50  0001 C CNN
+F 3 "~" H 4400 3000 50  0001 C CNN
+	1    4400 2950
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4650 2850 4650 2700
+Wire Wire Line
+	4650 2700 4450 2700
+Wire Wire Line
+	4450 2700 4450 2500
+Wire Wire Line
+	4550 2500 4550 2550
+Wire Wire Line
+	4550 2550 4700 2550
+Wire Wire Line
+	4650 2950 4700 2950
+Wire Wire Line
+	4700 2950 4700 2550
+Wire Wire Line
+	4150 2700 4300 2700
+Wire Wire Line
+	4300 2700 4300 2500
+Wire Wire Line
+	4150 2700 4150 2950
+$Comp
+L Sensor_Temperature:MAX31865_Module U3
+U 1 1 6174427E
+P 5900 1650
+F 0 "U3" V 6300 800 50  0000 L CNN
+F 1 "MAX31865_Module" V 6400 800 50  0000 L CNN
+F 2 "Connector:MAX31865_Module" H 5900 1650 50  0001 C CNN
+F 3 "" H 5900 1650 50  0001 C CNN
+	1    5900 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0105
+U 1 1 6174437E
+P 5050 1650
+F 0 "#PWR0105" H 5050 1500 50  0001 C CNN
+F 1 "+5V" H 5065 1823 50  0000 C CNN
+F 2 "" H 5050 1650 50  0001 C CNN
+F 3 "" H 5050 1650 50  0001 C CNN
+	1    5050 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 1650 5050 1700
+$Comp
+L power:GND #PWR0106
+U 1 1 61744389
+P 5250 1550
+F 0 "#PWR0106" H 5250 1300 50  0001 C CNN
+F 1 "GND" H 5250 1600 50  0000 C CNN
+F 2 "" H 5250 1550 50  0001 C CNN
+F 3 "" H 5250 1550 50  0001 C CNN
+	1    5250 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 1550 5150 1550
+Wire Wire Line
+	5150 1550 5150 1700
+Text GLabel 5650 1600 1    50   Input ~ 0
+CS1
+Wire Wire Line
+	5650 1600 5650 1700
+Text GLabel 5450 1600 1    50   Input ~ 0
+SDI
+Text GLabel 5750 1600 1    50   Input ~ 0
+SDO
+Wire Wire Line
+	5450 1600 5450 1700
+Wire Wire Line
+	5750 1600 5750 1700
+Text GLabel 5550 1600 1    50   Input ~ 0
+CLK
+Wire Wire Line
+	5550 1600 5550 1700
+$Comp
+L Device:Thermistor_PTC_3wire TH3
+U 1 1 6174439D
+P 5400 2950
+F 0 "TH3" V 5100 2950 50  0000 C CNN
+F 1 "PT100" V 5200 2950 50  0000 C CNN
+F 2 "" H 5400 3000 50  0001 C CNN
+F 3 "~" H 5400 3000 50  0001 C CNN
+	1    5400 2950
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5650 2850 5650 2700
+Wire Wire Line
+	5650 2700 5450 2700
+Wire Wire Line
+	5450 2700 5450 2500
+Wire Wire Line
+	5550 2500 5550 2550
+Wire Wire Line
+	5550 2550 5700 2550
+Wire Wire Line
+	5650 2950 5700 2950
+Wire Wire Line
+	5700 2950 5700 2550
+Wire Wire Line
+	5150 2700 5300 2700
+Wire Wire Line
+	5300 2700 5300 2500
+Wire Wire Line
+	5150 2700 5150 2950
+$Comp
+L Sensor_Temperature:MAX31865_Module U5
+U 1 1 61751496
+P 6900 1650
+F 0 "U5" V 7300 800 50  0000 L CNN
+F 1 "MAX31865_Module" V 7400 800 50  0000 L CNN
+F 2 "Connector:MAX31865_Module" H 6900 1650 50  0001 C CNN
+F 3 "" H 6900 1650 50  0001 C CNN
+	1    6900 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0107
+U 1 1 61751606
+P 6050 1650
+F 0 "#PWR0107" H 6050 1500 50  0001 C CNN
+F 1 "+5V" H 6065 1823 50  0000 C CNN
+F 2 "" H 6050 1650 50  0001 C CNN
+F 3 "" H 6050 1650 50  0001 C CNN
+	1    6050 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 1650 6050 1700
+$Comp
+L power:GND #PWR0108
+U 1 1 61751611
+P 6250 1550
+F 0 "#PWR0108" H 6250 1300 50  0001 C CNN
+F 1 "GND" H 6250 1600 50  0000 C CNN
+F 2 "" H 6250 1550 50  0001 C CNN
+F 3 "" H 6250 1550 50  0001 C CNN
+	1    6250 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 1550 6150 1550
+Wire Wire Line
+	6150 1550 6150 1700
+Text GLabel 6650 1600 1    50   Input ~ 0
+CS2
+Wire Wire Line
+	6650 1600 6650 1700
+Text GLabel 6450 1600 1    50   Input ~ 0
+SDI
+Text GLabel 6750 1600 1    50   Input ~ 0
+SDO
+Wire Wire Line
+	6450 1600 6450 1700
+Wire Wire Line
+	6750 1600 6750 1700
+Text GLabel 6550 1600 1    50   Input ~ 0
+CLK
+Wire Wire Line
+	6550 1600 6550 1700
+$Comp
+L Device:Thermistor_PTC_3wire TH5
+U 1 1 61751625
+P 6400 2950
+F 0 "TH5" V 6100 2950 50  0000 C CNN
+F 1 "PT100" V 6200 2950 50  0000 C CNN
+F 2 "" H 6400 3000 50  0001 C CNN
+F 3 "~" H 6400 3000 50  0001 C CNN
+	1    6400 2950
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	6650 2850 6650 2700
+Wire Wire Line
+	6650 2700 6450 2700
+Wire Wire Line
+	6450 2700 6450 2500
+Wire Wire Line
+	6550 2500 6550 2550
+Wire Wire Line
+	6550 2550 6700 2550
+Wire Wire Line
+	6650 2950 6700 2950
+Wire Wire Line
+	6700 2950 6700 2550
+Wire Wire Line
+	6150 2700 6300 2700
+Wire Wire Line
+	6300 2700 6300 2500
+Wire Wire Line
+	6150 2700 6150 2950
+$Comp
+L Sensor_Temperature:MAX31865_Module U7
+U 1 1 61751639
+P 7950 1650
+F 0 "U7" V 8350 800 50  0000 L CNN
+F 1 "MAX31865_Module" V 8450 800 50  0000 L CNN
+F 2 "Connector:MAX31865_Module" H 7950 1650 50  0001 C CNN
+F 3 "" H 7950 1650 50  0001 C CNN
+	1    7950 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0109
+U 1 1 61751643
+P 7100 1650
+F 0 "#PWR0109" H 7100 1500 50  0001 C CNN
+F 1 "+5V" H 7115 1823 50  0000 C CNN
+F 2 "" H 7100 1650 50  0001 C CNN
+F 3 "" H 7100 1650 50  0001 C CNN
+	1    7100 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 1650 7100 1700
+$Comp
+L power:GND #PWR0110
+U 1 1 6175164E
+P 7300 1550
+F 0 "#PWR0110" H 7300 1300 50  0001 C CNN
+F 1 "GND" H 7300 1600 50  0000 C CNN
+F 2 "" H 7300 1550 50  0001 C CNN
+F 3 "" H 7300 1550 50  0001 C CNN
+	1    7300 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 1550 7200 1550
+Wire Wire Line
+	7200 1550 7200 1700
+Text GLabel 7700 1600 1    50   Input ~ 0
+CS3
+Wire Wire Line
+	7700 1600 7700 1700
+Text GLabel 7500 1600 1    50   Input ~ 0
+SDI
+Text GLabel 7800 1600 1    50   Input ~ 0
+SDO
+Wire Wire Line
+	7500 1600 7500 1700
+Wire Wire Line
+	7800 1600 7800 1700
+Text GLabel 7600 1600 1    50   Input ~ 0
+CLK
+Wire Wire Line
+	7600 1600 7600 1700
+$Comp
+L Device:Thermistor_PTC_3wire TH7
+U 1 1 61751662
+P 7450 2950
+F 0 "TH7" V 7150 2950 50  0000 C CNN
+F 1 "PT100" V 7250 2950 50  0000 C CNN
+F 2 "" H 7450 3000 50  0001 C CNN
+F 3 "~" H 7450 3000 50  0001 C CNN
+	1    7450 2950
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	7700 2850 7700 2700
+Wire Wire Line
+	7700 2700 7500 2700
+Wire Wire Line
+	7500 2700 7500 2500
+Wire Wire Line
+	7600 2500 7600 2550
+Wire Wire Line
+	7600 2550 7750 2550
+Wire Wire Line
+	7700 2950 7750 2950
+Wire Wire Line
+	7750 2950 7750 2550
+Wire Wire Line
+	7200 2700 7350 2700
+Wire Wire Line
+	7350 2700 7350 2500
+Wire Wire Line
+	7200 2700 7200 2950
+$Comp
+L Sensor_Temperature:MAX31865_Module U9
+U 1 1 61759DE9
+P 8950 1650
+F 0 "U9" V 9350 800 50  0000 L CNN
+F 1 "MAX31865_Module" V 9450 800 50  0000 L CNN
+F 2 "Connector:MAX31865_Module" H 8950 1650 50  0001 C CNN
+F 3 "" H 8950 1650 50  0001 C CNN
+	1    8950 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0111
+U 1 1 6175A039
+P 8100 1650
+F 0 "#PWR0111" H 8100 1500 50  0001 C CNN
+F 1 "+5V" H 8115 1823 50  0000 C CNN
+F 2 "" H 8100 1650 50  0001 C CNN
+F 3 "" H 8100 1650 50  0001 C CNN
+	1    8100 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 1650 8100 1700
+$Comp
+L power:GND #PWR0112
+U 1 1 6175A044
+P 8300 1550
+F 0 "#PWR0112" H 8300 1300 50  0001 C CNN
+F 1 "GND" H 8300 1600 50  0000 C CNN
+F 2 "" H 8300 1550 50  0001 C CNN
+F 3 "" H 8300 1550 50  0001 C CNN
+	1    8300 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 1550 8200 1550
+Wire Wire Line
+	8200 1550 8200 1700
+Text GLabel 8700 1600 1    50   Input ~ 0
+CS4
+Wire Wire Line
+	8700 1600 8700 1700
+Text GLabel 8500 1600 1    50   Input ~ 0
+SDI
+Text GLabel 8800 1600 1    50   Input ~ 0
+SDO
+Wire Wire Line
+	8500 1600 8500 1700
+Wire Wire Line
+	8800 1600 8800 1700
+Text GLabel 8600 1600 1    50   Input ~ 0
+CLK
+Wire Wire Line
+	8600 1600 8600 1700
+$Comp
+L Device:Thermistor_PTC_3wire TH9
+U 1 1 6175A058
+P 8450 2950
+F 0 "TH9" V 8150 2950 50  0000 C CNN
+F 1 "PT100" V 8250 2950 50  0000 C CNN
+F 2 "" H 8450 3000 50  0001 C CNN
+F 3 "~" H 8450 3000 50  0001 C CNN
+	1    8450 2950
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	8700 2850 8700 2700
+Wire Wire Line
+	8700 2700 8500 2700
+Wire Wire Line
+	8500 2700 8500 2500
+Wire Wire Line
+	8600 2500 8600 2550
+Wire Wire Line
+	8600 2550 8750 2550
+Wire Wire Line
+	8700 2950 8750 2950
+Wire Wire Line
+	8750 2950 8750 2550
+Wire Wire Line
+	8200 2700 8350 2700
+Wire Wire Line
+	8350 2700 8350 2500
+Wire Wire Line
+	8200 2700 8200 2950
+$Comp
+L Sensor_Temperature:MAX31865_Module U11
+U 1 1 6175A06C
+P 9950 1650
+F 0 "U11" V 10350 800 50  0000 L CNN
+F 1 "MAX31865_Module" V 10450 800 50  0000 L CNN
+F 2 "Connector:MAX31865_Module" H 9950 1650 50  0001 C CNN
+F 3 "" H 9950 1650 50  0001 C CNN
+	1    9950 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0113
+U 1 1 6175A076
+P 9100 1650
+F 0 "#PWR0113" H 9100 1500 50  0001 C CNN
+F 1 "+5V" H 9115 1823 50  0000 C CNN
+F 2 "" H 9100 1650 50  0001 C CNN
+F 3 "" H 9100 1650 50  0001 C CNN
+	1    9100 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 1650 9100 1700
+$Comp
+L power:GND #PWR0114
+U 1 1 6175A081
+P 9300 1550
+F 0 "#PWR0114" H 9300 1300 50  0001 C CNN
+F 1 "GND" H 9300 1600 50  0000 C CNN
+F 2 "" H 9300 1550 50  0001 C CNN
+F 3 "" H 9300 1550 50  0001 C CNN
+	1    9300 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 1550 9200 1550
+Wire Wire Line
+	9200 1550 9200 1700
+Text GLabel 9700 1600 1    50   Input ~ 0
+CS5
+Wire Wire Line
+	9700 1600 9700 1700
+Text GLabel 9500 1600 1    50   Input ~ 0
+SDI
+Text GLabel 9800 1600 1    50   Input ~ 0
+SDO
+Wire Wire Line
+	9500 1600 9500 1700
+Wire Wire Line
+	9800 1600 9800 1700
+Text GLabel 9600 1600 1    50   Input ~ 0
+CLK
+Wire Wire Line
+	9600 1600 9600 1700
+$Comp
+L Device:Thermistor_PTC_3wire TH11
+U 1 1 6175A095
+P 9450 2950
+F 0 "TH11" V 9150 2950 50  0000 C CNN
+F 1 "PT100" V 9250 2950 50  0000 C CNN
+F 2 "" H 9450 3000 50  0001 C CNN
+F 3 "~" H 9450 3000 50  0001 C CNN
+	1    9450 2950
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	9700 2850 9700 2700
+Wire Wire Line
+	9700 2700 9500 2700
+Wire Wire Line
+	9500 2700 9500 2500
+Wire Wire Line
+	9600 2500 9600 2550
+Wire Wire Line
+	9600 2550 9750 2550
+Wire Wire Line
+	9700 2950 9750 2950
+Wire Wire Line
+	9750 2950 9750 2550
+Wire Wire Line
+	9200 2700 9350 2700
+Wire Wire Line
+	9350 2700 9350 2500
+Wire Wire Line
+	9200 2700 9200 2950
+$Comp
+L Sensor_Temperature:MAX31865_Module U2
+U 1 1 6176D145
+P 4900 3750
+F 0 "U2" V 5300 2900 50  0000 L CNN
+F 1 "MAX31865_Module" V 5400 2900 50  0000 L CNN
+F 2 "Connector:MAX31865_Module" H 4900 3750 50  0001 C CNN
+F 3 "" H 4900 3750 50  0001 C CNN
+	1    4900 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0115
+U 1 1 6176D475
+P 4050 3750
+F 0 "#PWR0115" H 4050 3600 50  0001 C CNN
+F 1 "+5V" H 4065 3923 50  0000 C CNN
+F 2 "" H 4050 3750 50  0001 C CNN
+F 3 "" H 4050 3750 50  0001 C CNN
+	1    4050 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 3750 4050 3800
+$Comp
+L power:GND #PWR0116
+U 1 1 6176D480
+P 4250 3650
+F 0 "#PWR0116" H 4250 3400 50  0001 C CNN
+F 1 "GND" H 4250 3700 50  0000 C CNN
+F 2 "" H 4250 3650 50  0001 C CNN
+F 3 "" H 4250 3650 50  0001 C CNN
+	1    4250 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 3650 4150 3650
+Wire Wire Line
+	4150 3650 4150 3800
+Text GLabel 4650 3700 1    50   Input ~ 0
+CS6
+Wire Wire Line
+	4650 3700 4650 3800
+Text GLabel 4450 3700 1    50   Input ~ 0
+SDI
+Text GLabel 4750 3700 1    50   Input ~ 0
+SDO
+Wire Wire Line
+	4450 3700 4450 3800
+Wire Wire Line
+	4750 3700 4750 3800
+Text GLabel 4550 3700 1    50   Input ~ 0
+CLK
+Wire Wire Line
+	4550 3700 4550 3800
+$Comp
+L Device:Thermistor_PTC_3wire TH2
+U 1 1 6176D494
+P 4400 5050
+F 0 "TH2" V 4100 5050 50  0000 C CNN
+F 1 "PT100" V 4200 5050 50  0000 C CNN
+F 2 "" H 4400 5100 50  0001 C CNN
+F 3 "~" H 4400 5100 50  0001 C CNN
+	1    4400 5050
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4650 4950 4650 4800
+Wire Wire Line
+	4650 4800 4450 4800
+Wire Wire Line
+	4450 4800 4450 4600
+Wire Wire Line
+	4550 4600 4550 4650
+Wire Wire Line
+	4550 4650 4700 4650
+Wire Wire Line
+	4650 5050 4700 5050
+Wire Wire Line
+	4700 5050 4700 4650
+Wire Wire Line
+	4150 4800 4300 4800
+Wire Wire Line
+	4300 4800 4300 4600
+Wire Wire Line
+	4150 4800 4150 5050
+$Comp
+L Sensor_Temperature:MAX31865_Module U4
+U 1 1 6176D4A8
+P 5900 3750
+F 0 "U4" V 6300 2900 50  0000 L CNN
+F 1 "MAX31865_Module" V 6400 2900 50  0000 L CNN
+F 2 "Connector:MAX31865_Module" H 5900 3750 50  0001 C CNN
+F 3 "" H 5900 3750 50  0001 C CNN
+	1    5900 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0117
+U 1 1 6176D4B2
+P 5050 3750
+F 0 "#PWR0117" H 5050 3600 50  0001 C CNN
+F 1 "+5V" H 5065 3923 50  0000 C CNN
+F 2 "" H 5050 3750 50  0001 C CNN
+F 3 "" H 5050 3750 50  0001 C CNN
+	1    5050 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3750 5050 3800
+$Comp
+L power:GND #PWR0118
+U 1 1 6176D4BD
+P 5250 3650
+F 0 "#PWR0118" H 5250 3400 50  0001 C CNN
+F 1 "GND" H 5250 3700 50  0000 C CNN
+F 2 "" H 5250 3650 50  0001 C CNN
+F 3 "" H 5250 3650 50  0001 C CNN
+	1    5250 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3650 5150 3650
+Wire Wire Line
+	5150 3650 5150 3800
+Text GLabel 5650 3700 1    50   Input ~ 0
+CS7
+Wire Wire Line
+	5650 3700 5650 3800
+Text GLabel 5450 3700 1    50   Input ~ 0
+SDI
+Text GLabel 5750 3700 1    50   Input ~ 0
+SDO
+Wire Wire Line
+	5450 3700 5450 3800
+Wire Wire Line
+	5750 3700 5750 3800
+Text GLabel 5550 3700 1    50   Input ~ 0
+CLK
+Wire Wire Line
+	5550 3700 5550 3800
+$Comp
+L Device:Thermistor_PTC_3wire TH4
+U 1 1 6176D4D1
+P 5400 5050
+F 0 "TH4" V 5100 5050 50  0000 C CNN
+F 1 "PT100" V 5200 5050 50  0000 C CNN
+F 2 "" H 5400 5100 50  0001 C CNN
+F 3 "~" H 5400 5100 50  0001 C CNN
+	1    5400 5050
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5650 4950 5650 4800
+Wire Wire Line
+	5650 4800 5450 4800
+Wire Wire Line
+	5450 4800 5450 4600
+Wire Wire Line
+	5550 4600 5550 4650
+Wire Wire Line
+	5550 4650 5700 4650
+Wire Wire Line
+	5650 5050 5700 5050
+Wire Wire Line
+	5700 5050 5700 4650
+Wire Wire Line
+	5150 4800 5300 4800
+Wire Wire Line
+	5300 4800 5300 4600
+Wire Wire Line
+	5150 4800 5150 5050
+$Comp
+L Sensor_Temperature:MAX31865_Module U6
+U 1 1 6176D4E5
+P 6900 3750
+F 0 "U6" V 7300 2900 50  0000 L CNN
+F 1 "MAX31865_Module" V 7400 2900 50  0000 L CNN
+F 2 "Connector:MAX31865_Module" H 6900 3750 50  0001 C CNN
+F 3 "" H 6900 3750 50  0001 C CNN
+	1    6900 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0119
+U 1 1 6176D4EF
+P 6050 3750
+F 0 "#PWR0119" H 6050 3600 50  0001 C CNN
+F 1 "+5V" H 6065 3923 50  0000 C CNN
+F 2 "" H 6050 3750 50  0001 C CNN
+F 3 "" H 6050 3750 50  0001 C CNN
+	1    6050 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 3750 6050 3800
+$Comp
+L power:GND #PWR0120
+U 1 1 6176D4FA
+P 6250 3650
+F 0 "#PWR0120" H 6250 3400 50  0001 C CNN
+F 1 "GND" H 6250 3700 50  0000 C CNN
+F 2 "" H 6250 3650 50  0001 C CNN
+F 3 "" H 6250 3650 50  0001 C CNN
+	1    6250 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 3650 6150 3650
+Wire Wire Line
+	6150 3650 6150 3800
+Text GLabel 6650 3700 1    50   Input ~ 0
+CS8
+Wire Wire Line
+	6650 3700 6650 3800
+Text GLabel 6450 3700 1    50   Input ~ 0
+SDI
+Text GLabel 6750 3700 1    50   Input ~ 0
+SDO
+Wire Wire Line
+	6450 3700 6450 3800
+Wire Wire Line
+	6750 3700 6750 3800
+Text GLabel 6550 3700 1    50   Input ~ 0
+CLK
+Wire Wire Line
+	6550 3700 6550 3800
+$Comp
+L Device:Thermistor_PTC_3wire TH6
+U 1 1 6176D50E
+P 6400 5050
+F 0 "TH6" V 6100 5050 50  0000 C CNN
+F 1 "PT100" V 6200 5050 50  0000 C CNN
+F 2 "" H 6400 5100 50  0001 C CNN
+F 3 "~" H 6400 5100 50  0001 C CNN
+	1    6400 5050
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	6650 4950 6650 4800
+Wire Wire Line
+	6650 4800 6450 4800
+Wire Wire Line
+	6450 4800 6450 4600
+Wire Wire Line
+	6550 4600 6550 4650
+Wire Wire Line
+	6550 4650 6700 4650
+Wire Wire Line
+	6650 5050 6700 5050
+Wire Wire Line
+	6700 5050 6700 4650
+Wire Wire Line
+	6150 4800 6300 4800
+Wire Wire Line
+	6300 4800 6300 4600
+Wire Wire Line
+	6150 4800 6150 5050
+$Comp
+L Sensor_Temperature:MAX31865_Module U8
+U 1 1 6176D522
+P 7950 3750
+F 0 "U8" V 8350 2900 50  0000 L CNN
+F 1 "MAX31865_Module" V 8450 2900 50  0000 L CNN
+F 2 "Connector:MAX31865_Module" H 7950 3750 50  0001 C CNN
+F 3 "" H 7950 3750 50  0001 C CNN
+	1    7950 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0121
+U 1 1 6176D52C
+P 7100 3750
+F 0 "#PWR0121" H 7100 3600 50  0001 C CNN
+F 1 "+5V" H 7115 3923 50  0000 C CNN
+F 2 "" H 7100 3750 50  0001 C CNN
+F 3 "" H 7100 3750 50  0001 C CNN
+	1    7100 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 3750 7100 3800
+$Comp
+L power:GND #PWR0122
+U 1 1 6176D537
+P 7300 3650
+F 0 "#PWR0122" H 7300 3400 50  0001 C CNN
+F 1 "GND" H 7300 3700 50  0000 C CNN
+F 2 "" H 7300 3650 50  0001 C CNN
+F 3 "" H 7300 3650 50  0001 C CNN
+	1    7300 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 3650 7200 3650
+Wire Wire Line
+	7200 3650 7200 3800
+Text GLabel 7700 3700 1    50   Input ~ 0
+CS9
+Wire Wire Line
+	7700 3700 7700 3800
+Text GLabel 7500 3700 1    50   Input ~ 0
+SDI
+Text GLabel 7800 3700 1    50   Input ~ 0
+SDO
+Wire Wire Line
+	7500 3700 7500 3800
+Wire Wire Line
+	7800 3700 7800 3800
+Text GLabel 7600 3700 1    50   Input ~ 0
+CLK
+Wire Wire Line
+	7600 3700 7600 3800
+$Comp
+L Device:Thermistor_PTC_3wire TH8
+U 1 1 6176D54B
+P 7450 5050
+F 0 "TH8" V 7150 5050 50  0000 C CNN
+F 1 "PT100" V 7250 5050 50  0000 C CNN
+F 2 "" H 7450 5100 50  0001 C CNN
+F 3 "~" H 7450 5100 50  0001 C CNN
+	1    7450 5050
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	7700 4950 7700 4800
+Wire Wire Line
+	7700 4800 7500 4800
+Wire Wire Line
+	7500 4800 7500 4600
+Wire Wire Line
+	7600 4600 7600 4650
+Wire Wire Line
+	7600 4650 7750 4650
+Wire Wire Line
+	7700 5050 7750 5050
+Wire Wire Line
+	7750 5050 7750 4650
+Wire Wire Line
+	7200 4800 7350 4800
+Wire Wire Line
+	7350 4800 7350 4600
+Wire Wire Line
+	7200 4800 7200 5050
+$Comp
+L Sensor_Temperature:MAX31865_Module U10
+U 1 1 6176D55F
+P 8950 3750
+F 0 "U10" V 9350 2900 50  0000 L CNN
+F 1 "MAX31865_Module" V 9450 2900 50  0000 L CNN
+F 2 "Connector:MAX31865_Module" H 8950 3750 50  0001 C CNN
+F 3 "" H 8950 3750 50  0001 C CNN
+	1    8950 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0123
+U 1 1 6176D569
+P 8100 3750
+F 0 "#PWR0123" H 8100 3600 50  0001 C CNN
+F 1 "+5V" H 8115 3923 50  0000 C CNN
+F 2 "" H 8100 3750 50  0001 C CNN
+F 3 "" H 8100 3750 50  0001 C CNN
+	1    8100 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 3750 8100 3800
+$Comp
+L power:GND #PWR0124
+U 1 1 6176D574
+P 8300 3650
+F 0 "#PWR0124" H 8300 3400 50  0001 C CNN
+F 1 "GND" H 8300 3700 50  0000 C CNN
+F 2 "" H 8300 3650 50  0001 C CNN
+F 3 "" H 8300 3650 50  0001 C CNN
+	1    8300 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 3650 8200 3650
+Wire Wire Line
+	8200 3650 8200 3800
+Text GLabel 8700 3700 1    50   Input ~ 0
+CS10
+Wire Wire Line
+	8700 3700 8700 3800
+Text GLabel 8500 3700 1    50   Input ~ 0
+SDI
+Text GLabel 8800 3700 1    50   Input ~ 0
+SDO
+Wire Wire Line
+	8500 3700 8500 3800
+Wire Wire Line
+	8800 3700 8800 3800
+Text GLabel 8600 3700 1    50   Input ~ 0
+CLK
+Wire Wire Line
+	8600 3700 8600 3800
+$Comp
+L Device:Thermistor_PTC_3wire TH10
+U 1 1 6176D588
+P 8450 5050
+F 0 "TH10" V 8150 5050 50  0000 C CNN
+F 1 "PT100" V 8250 5050 50  0000 C CNN
+F 2 "" H 8450 5100 50  0001 C CNN
+F 3 "~" H 8450 5100 50  0001 C CNN
+	1    8450 5050
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	8700 4950 8700 4800
+Wire Wire Line
+	8700 4800 8500 4800
+Wire Wire Line
+	8500 4800 8500 4600
+Wire Wire Line
+	8600 4600 8600 4650
+Wire Wire Line
+	8600 4650 8750 4650
+Wire Wire Line
+	8700 5050 8750 5050
+Wire Wire Line
+	8750 5050 8750 4650
+Wire Wire Line
+	8200 4800 8350 4800
+Wire Wire Line
+	8350 4800 8350 4600
+Wire Wire Line
+	8200 4800 8200 5050
+$Comp
+L Sensor_Temperature:MAX31865_Module U12
+U 1 1 6176D59C
+P 9950 3750
+F 0 "U12" V 10350 2900 50  0000 L CNN
+F 1 "MAX31865_Module" V 10450 2900 50  0000 L CNN
+F 2 "Connector:MAX31865_Module" H 9950 3750 50  0001 C CNN
+F 3 "" H 9950 3750 50  0001 C CNN
+	1    9950 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0125
+U 1 1 6176D5A6
+P 9100 3750
+F 0 "#PWR0125" H 9100 3600 50  0001 C CNN
+F 1 "+5V" H 9115 3923 50  0000 C CNN
+F 2 "" H 9100 3750 50  0001 C CNN
+F 3 "" H 9100 3750 50  0001 C CNN
+	1    9100 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 3750 9100 3800
+$Comp
+L power:GND #PWR0126
+U 1 1 6176D5B1
+P 9300 3650
+F 0 "#PWR0126" H 9300 3400 50  0001 C CNN
+F 1 "GND" H 9300 3700 50  0000 C CNN
+F 2 "" H 9300 3650 50  0001 C CNN
+F 3 "" H 9300 3650 50  0001 C CNN
+	1    9300 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 3650 9200 3650
+Wire Wire Line
+	9200 3650 9200 3800
+Text GLabel 9700 3700 1    50   Input ~ 0
+CS11
+Wire Wire Line
+	9700 3700 9700 3800
+Text GLabel 9500 3700 1    50   Input ~ 0
+SDI
+Text GLabel 9800 3700 1    50   Input ~ 0
+SDO
+Wire Wire Line
+	9500 3700 9500 3800
+Wire Wire Line
+	9800 3700 9800 3800
+Text GLabel 9600 3700 1    50   Input ~ 0
+CLK
+Wire Wire Line
+	9600 3700 9600 3800
+$Comp
+L Device:Thermistor_PTC_3wire TH12
+U 1 1 6176D5C5
+P 9450 5050
+F 0 "TH12" V 9150 5050 50  0000 C CNN
+F 1 "PT100" V 9250 5050 50  0000 C CNN
+F 2 "" H 9450 5100 50  0001 C CNN
+F 3 "~" H 9450 5100 50  0001 C CNN
+	1    9450 5050
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	9700 4950 9700 4800
+Wire Wire Line
+	9700 4800 9500 4800
+Wire Wire Line
+	9500 4800 9500 4600
+Wire Wire Line
+	9600 4600 9600 4650
+Wire Wire Line
+	9600 4650 9750 4650
+Wire Wire Line
+	9700 5050 9750 5050
+Wire Wire Line
+	9750 5050 9750 4650
+Wire Wire Line
+	9200 4800 9350 4800
+Wire Wire Line
+	9350 4800 9350 4600
+Wire Wire Line
+	9200 4800 9200 5050
+$EndSCHEMATC
